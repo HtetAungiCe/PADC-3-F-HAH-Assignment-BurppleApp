@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="210dp">
+
+        <ImageView
+            android:id="@+id/iv_promotion_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:foreground="@android:drawable/screen_background_dark_transparent"
+            android:foregroundTintMode="screen"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_of_burpple" />
+
+        <RelativeLayout
+            android:id="@+id/rl_promotions_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_burpple_exclusive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/text_border_yellow"
+                android:padding="4dp"
+                android:text="@string/burpple_exclusive"
+                android:textAlignment="center"
+                android:textColor="@color/full_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_promotions_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_burpple_exclusive"
+                android:layout_below="@id/tv_burpple_exclusive"
+                android:layout_marginTop="24dp"
+                android:shadowColor="@color/full_black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="1-for-1 Scoop"
+                android:textColor="@color/full_white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/divider_promotions"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:layout_alignLeft="@id/tv_promotions_detail"
+                android:layout_below="@id/tv_promotions_detail"
+                android:layout_marginTop="8dp"
+                android:alpha="0.8"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/tv_promotions_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/divider_promotions"
+                android:layout_below="@id/divider_promotions"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Till 31st Jan 18"
+                android:textAllCaps="true"
+                android:textColor="@color/full_white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_promotions"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_promotion_item_image"
+            android:background="@color/accent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:maxEms="20"
+                android:text="Licktionary"
+                android:textColor="@color/full_white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_reviewer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="8dp"
+                android:text="Kent Ridge"
+                android:textColor="@color/full_white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hah.htetaunghlaing.burppleapp.viewitems.BackgroundImageViewItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/fl_item_background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_background_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@android:drawable/screen_background_dark_transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_of_burpple"/>
+
+            <TextView
+                android:id="@+id/tv_features"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/text_border"
+                android:padding="4dp"
+                android:text="@string/text_for_feature"
+                android:textColor="@color/full_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_features_background_image"
+                style="@style/scales_for_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_features"
+                android:textAlignment="center"
+                android:layout_marginTop="4dp"
+                android:text="@string/text_for_background_image"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_features_say_about_that"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Some Thing About That Want To Say"
+                android:textSize="12sp"
+                style="@style/scales_for_text"
+                android:layout_below="@id/tv_features_background_image"
+                />
+        </RelativeLayout>
+
+    </FrameLayout>
+</hah.htetaunghlaing.burppleapp.viewitems.BackgroundImageViewItem>

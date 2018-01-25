@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BurppleApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_for_background_image">NEWLY OPEN</string>
+   <string name="text_for_feature">FEATURES</string>
+    <string name="hint_text">Search e.g Japanese in Orchard</string>
+    <string name="burpple">burpple</string>
+    <string name="featured"><b>FEATURED</b></string>
+    <string name="lasted"><b>LASTED</b></string>
+    <string name="see_more"><i><u>See More</u></i></string>
+    <string name="promotion"><b>Promotions</b></string>
+    <string name="burpple_exclusive"><b>burpple exclusive</b></string>
+    <string name="guide"><b>Burpple Guides</b></string>
+    <string name="news_and_trading"><b>News and Trending</b></string>
+</resources>
